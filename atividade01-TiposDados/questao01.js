@@ -6,7 +6,7 @@ let t5 = 1;
 let txt1 = "aprendi";
 let txt2 = "JavaScript";
 
-console.log(n1+","+ n2+"," +n3+","+ n4+","+ n5+ "..."+ txt1 + txt2);
+console.log(t1, ",", t2, ",", t3,",", t4, ",", t5, "...", txt1, txt2,"!!!");
 
 
 

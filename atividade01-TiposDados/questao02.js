@@ -1,0 +1,32 @@
+let n1 = 0;
+let n2 = 3.14;
+let n3 = Infinity;
+let n4 = NaN;
+let n5 = true;
+let n6 = 4 > 1;
+let n7 = "texto";
+let n8 = "E tetra"+1994;
+let n9 = Symbol("id");
+let n10 = Date;
+let n11 = String;
+let n12 = [1,2,3,4];
+let n13 = null;
+let n14 = undefined;
+// let n15 = alert;
+
+
+console.log(typeof(n1));
+console.log(typeof(n2));
+console.log(typeof(Infinity));
+console.log(typeof(NaN));
+console.log(typeof(true));
+console.log(typeof(4 > 1));
+console.log(typeof(n7));
+console.log(typeof(n8));
+console.log(typeof(n9));
+console.log(typeof(Date));
+console.log(typeof(String));
+console.log(typeof(n12));
+console.log(typeof(null));
+console.log(typeof(undefined));
+console.log(typeof(alert));
