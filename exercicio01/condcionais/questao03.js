@@ -1,0 +1,1 @@
+// Exercício 03) Faca um programa que lei 3 números e mostre se o valor de sua soma e par ou ímpar.
