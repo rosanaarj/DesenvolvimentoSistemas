@@ -1,0 +1,1 @@
+// exercício 07) Faça uma função que receba o salário de um trabalhador e o empréstimo é de até 20% do salário do trabalahador, se for, o empréstimo deve ser aprovado
