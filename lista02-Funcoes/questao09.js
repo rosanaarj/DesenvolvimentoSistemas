@@ -1,0 +1,1 @@
+/** 09ª Crie uma função anônima e atribua-a a uma variável. */

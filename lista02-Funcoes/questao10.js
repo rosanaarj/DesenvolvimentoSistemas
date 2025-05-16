@@ -1,0 +1,1 @@
+/** 10ª Implemente uma função que receba outra função como parâmetro (callback) e a execute. */
