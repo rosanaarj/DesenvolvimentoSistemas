@@ -5,3 +5,4 @@ function dobro(numero){
 }
 
 let resultado = dobro(25);
+console.log(resultado);
