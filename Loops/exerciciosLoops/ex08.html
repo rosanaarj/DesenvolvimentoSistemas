@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+     Faça um programa que leia várias palavras até que seja digitada a palavra “sair”. Conte quantas
+     vezes foi digitada a palavra “oi”.
+    </p>
+    <script>
+        let cont = 0;
+        while (true) {
+            let palavra = prompt("Digite uma palavra:");
+            if (palavra === "sair") {
+                break;
+            }
+            if (palavra === "oi") {
+                cont++;
+            }
+        }
+        alert(`A palavra "oi" foi digitada ${cont} vezes.`);
+        document.writeln(`<h1>A palavra "oi" foi digitada ${cont} vezes.</h1>`);
+    </script>
+</body>
+</html>

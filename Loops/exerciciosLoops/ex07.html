@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Faça um programa que leia n números e depois exibia a média aritmética desses n números até
+        que o usuário digite valor 0;
+    </p>
+    <script>
+        let soma = 0;
+        let cont = 0;
+        while (true) {
+            let n = Number(prompt("Digite um número:"));
+            if (n === 0) {
+                break; 
+            }
+            soma += n;
+            cont++;
+        }
+        if (cont > 0) {
+            let media = soma / cont;
+            alert(`A media aritmética é: ${media}`);
+            document.writeln(`<h1>Média: ${media}</h1>`);
+        }
+    </script>
+</body>
+</html>

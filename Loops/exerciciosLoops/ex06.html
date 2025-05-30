@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <b>06º</b>
+    <p>Faça um programa que leia 3 números e depois 
+    exiba a média aritmética desses números;
+    </p>
+    <script>
+        let soma = 0;
+        let contador = 0;
+
+        while (contador < 3) {
+            let n = Number(prompt("Digite um número:"));
+            soma += n;
+            contador++;
+        }
+
+        let media = soma / 3;
+        alert(`A media aritmética é: ${media}`);
+        document.writeln(`<h1>Média: ${media}</h1>`);
+    </script>
+</body>
+</html>
+
+
