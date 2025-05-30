@@ -13,10 +13,30 @@
     <button onclick="verificarPalavras()">Começar</button>
     <p id="resultado"></p>
     <script>
-       function verificarPalavras() {
+    function verificarPalavras() {
         let menor = null;
         let maior = null;
-       }
+
+        while (true) {
+            let palavra = prompt("Digite uma palavra:");
+            if (palavra === null || palavra === "") break;
+
+            if (menor === null || palavra.length < menor.length) {
+                menor = palavra;
+            }
+            if (maior === null || palavra.length > maior.length) {
+                maior = palavra;
+            }
+        }
+
+        if (menor && maior) {
+            document.getElementById("resultado").innerHTML =
+                `Menor palavra: <b>${menor}</b> (${menor.length} caracteres)<br>` +
+                `Maior palavra: <b>${maior}</b> (${maior.length} caracteres)`;
+        } else {
+            document.getElementById("resultado").innerHTML = "Nenhuma palavra foi digitada.";
+        }
+    }
     </script>
 </body>
 </html>

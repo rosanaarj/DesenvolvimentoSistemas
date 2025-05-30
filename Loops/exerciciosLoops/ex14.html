@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+     Faça um programa que leia números digitados pelo usuário até que seja digitado o número 0
+     (zero). Conte a quantidade de números divisíveis por 3 e exiba o resultado.
+    </p>
+        <button onclick="contarDivisiveisPor3()">Começar</button>
+    <p id="resultado"></p>
+    <script>
+        function contarDivisiveisPor3() {
+            let contador = 0;
+            while (true) {
+                let numero = parseInt(prompt("Digite um número:"));
+                if (numero === 0 || isNaN(numero)) break;
+                if (numero % 3 === 0) contador++;
+            }
+            document.getElementById("resultado").innerHTML =
+                "Quantidade de números divisíveis por 3: <b>" + contador + "</b>";
+        }
+    </script>
+</body>
+</html>

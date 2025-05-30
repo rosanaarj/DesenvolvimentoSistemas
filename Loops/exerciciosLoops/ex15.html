@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+     Faça um programa que leia números digitados pelo usuário até que seja digitado um número
+     negativo. Calcule a média aritmética dos números divisíveis por 3.
+    </p>
+     <button onclick="calcularMediaDiv3()">Começar</button>
+    <p id="resultado"></p>
+        <script>
+        function calcularMediaDiv3() {
+            let soma = 0;
+            let contador = 0;
+            while (true) {
+                let numero = parseInt(prompt("Digite um número (negativo para sair):"));
+                if (isNaN(numero)) continue;
+                if (numero < 0) break;
+                if (numero % 3 === 0) {
+                    soma += numero;
+                    contador++;
+                }
+            }
+            if (contador > 0) {
+                let media = soma / contador;
+                document.getElementById("resultado").innerHTML =
+                    "Média dos números divisíveis por 3: <b>" + media.toFixed(2) + "</b>";
+            } else {
+                document.getElementById("resultado").innerHTML =
+                    "Nenhum número divisível por 3 foi digitado.";
+            }
+        }
+    </script>
+</body>
+</html>
