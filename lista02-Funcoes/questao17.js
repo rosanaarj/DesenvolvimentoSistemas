@@ -5,9 +5,9 @@ function gorjeta(preco) {
     let valorGorjeta = preco * 0.10;
     let valorTotal = preco + valorGorjeta;
 
-    console.log(`Valor da conta : R$ ${preco.toFixed(2)}`);
-    console.log(`Valor da gorjeta : R$ ${valorGorjeta.toFixed(2)}`);
-    console.log(`Valor Total : R$ ${valorTotal.toFixed(2)}`);
+    console.log(`Valor da conta : R$ ${preco}`);
+    console.log(`Valor da gorjeta : R$ ${valorGorjeta}`);
+    console.log(`Valor Total : R$ ${valorTotal}`);
 }
 
 gorjeta(100);

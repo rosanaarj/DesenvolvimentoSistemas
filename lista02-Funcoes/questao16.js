@@ -17,9 +17,9 @@ function calcularSalario(salarioBruto) {
     }
 
     let salarioLiquido = salarioBruto - desconto;
-    console.log(`Salário Bruto: R$ ${salarioBruto.toFixed(2)}`);
-    console.log(`Desconto : R$ ${desconto.toFixed(2)}`);
-    console.log(`Salário Líquido: R$ ${salarioLiquido.toFixed(2)}`);
+    console.log(`Salário Bruto: R$ ${salarioBruto}`);
+    console.log(`Desconto : R$ ${desconto}`);
+    console.log(`Salário Líquido: R$ ${salarioLiquido}`);
 }
 
 calcularSalario(2000);
