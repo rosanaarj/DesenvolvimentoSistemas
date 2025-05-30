@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    Faça um programa que leia números inteiros digitados pelo usuário até que seja digitado um
+    número negativo. Conte quantos números foram digitados e exiba esse valor na tela.
+    </p>
+    <button onclick="contarNumeros()">Começar</button>
+    <p id="resultado"></p>
+    <script>
+        function contarNumeros() {
+            let cont = 0;
+            let n = 0;
+            while (n >= 0) {
+                n = parseInt(prompt("Digite um número inteiro:"));
+               if (isNaN(n)) {
+                alert("Por favor, digite um número válido.");
+                n = 0;
+                continue;
+               }
+               if (n >= 0) cont++;
+            }
+            document.getElementById("resultado").innerText = "Quantidade de números digitados: " + cont;
+
+        }
+    </script>
+</body>
+</html>
