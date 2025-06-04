@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let minutos;
+
+do {
+  minutos = parseInt(prompt("Informe os minutos restantes para o réveillon:"));
+} while (isNaN(minutos) || minutos < 0);
+
+let segundosRestantes = minutos * 60;
+
+function contagem() {
+  console.log(`Tempo restante: ${segundosRestantes} segundos`);
+  
+  if (segundosRestantes <= 0) {
+    alert("Feliz ano novo!");
+    clearInterval(timer);
+  } else {
+    segundosRestantes -= 2;
+    if (segundosRestantes < 0) segundosRestantes = 0;
+  }
+}
+
+console.log("Iniciando contagem regressiva...");
+contagem();
+let timer = setInterval(contagem, 2000);
+
+    </script>
+</body>
+</html>
