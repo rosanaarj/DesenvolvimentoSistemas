@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let matricula = prompt("Digite sua matrícula:");
+    let senha = prompt("Digite sua senha:");
+
+    if (matricula !== "201" || senha !== "123456789") {
+      alert("Permissão negada.");
+    } else {
+      
+      let opcao = parseInt(prompt(
+        "Selecione a unidade de tempo:\n1 - Horas\n2 - Minutos\n3 - Segundos"
+      ));
+
+      let tempo = parseInt(prompt("Informe o tempo restante:"));
+      let tempoEmSegundos;
+
+      if (opcao === 1) {
+        tempoEmSegundos = tempo * 3600;
+      } else if (opcao === 2) {
+        tempoEmSegundos = tempo * 60;
+      } else if (opcao === 3) {
+        tempoEmSegundos = tempo;
+      } else {
+        alert("Opção inválida.");
+        throw new Error("Encerrando programa.");
+      }
+
+      alert("Iniciando contagem regressiva para detonação...");
+
+      
+      let intervalo = setInterval(function () {
+        console.clear();
+        console.log("Tempo restante: " + tempoEmSegundos + " segundos");
+
+        if (tempoEmSegundos <= 0) {
+          clearInterval(intervalo);
+          alert("💥 Bomba detonada!");
+        }
+
+        tempoEmSegundos--;
+      }, 1000);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero;
+
+    
+    function inteiroPositivo(valor) {
+      return Number.isInteger(valor) && valor >= 0;
+    }
+
+    
+    do {
+      numero = parseFloat(prompt("Digite um número inteiro positivo (0 ou maior) para calcular o fatorial:"));
+
+      if (!inteiroPositivo(numero)) {
+        alert("Valor inválido! Por favor, digite um número inteiro positivo.");
+      }
+    } while (!inteiroPositivo(numero));
+
+    
+    let fatorial = 1;
+    for (let i = 2; i <= numero; i++) {
+      fatorial *= i;
+    }
+    </script>
+</body>
+</html>
