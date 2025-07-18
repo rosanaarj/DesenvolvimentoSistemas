@@ -1,0 +1,1 @@
+/**5)Dado o array: let tecnologias  */
