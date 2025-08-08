@@ -1,0 +1,37 @@
+body{
+    background-color: #6e6b6b;
+}
+
+h2 {
+    text-align: center;
+    color: #fefefe;
+    text-decoration: underline;
+    text-underline-offset: 8px;;
+}
+
+#numero{
+    font-size: 16px;
+    padding-inline: 8px;
+    padding-block: 4px;
+    text-align: center;
+    outline: none;
+}
+
+#btnAdicionar{
+    border: none;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: violet;
+    color: white;
+    font-weight: bold;
+}
+
+#btnAdicionar:hover{
+    background-color: rgb(154, 17, 154);
+    cursor: pointer;
+}
+
+#exibir-array{
+    background-color: pink;
+    color: azure;
+}
