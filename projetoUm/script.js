@@ -23,3 +23,17 @@ function adicionarNumero(){
     exibirArray.innerHTML = `Array: ${array} Tamanho do array ${array.length}`;
     
 }
+
+function removerNumero() {
+    let exibirArray = document.querySelector('#exibir-array');
+
+    if (array.length === 0) {
+        alert('O array já está vazio!');
+        return;
+    }
+
+    array.pop(); 
+    console.log(array);
+
+    exibirArray.innerHTML = `Array: ${array} Tamanho do array ${array.length}`;
+}

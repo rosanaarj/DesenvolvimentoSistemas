@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #6e6b6b;
 }
 
@@ -9,7 +9,7 @@ h2 {
     text-underline-offset: 8px;;
 }
 
-#numero{
+#numero {
     font-size: 16px;
     padding-inline: 8px;
     padding-block: 4px;
@@ -17,7 +17,7 @@ h2 {
     outline: none;
 }
 
-#btnAdicionar{
+#btnAdicionar {
     border: none;
     padding: 4px;
     border-radius: 6px;
@@ -26,12 +26,12 @@ h2 {
     font-weight: bold;
 }
 
-#btnAdicionar:hover{
+#btnAdicionar:hover {
     background-color: rgb(154, 17, 154);
     cursor: pointer;
 }
 
-#exibir-array{
+#exibir-array {
     background-color: pink;
     color: azure;
 }
